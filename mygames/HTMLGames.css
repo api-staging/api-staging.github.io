@@ -1,0 +1,6 @@
+#gamePanel {
+    background-color: #ff0000;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+}

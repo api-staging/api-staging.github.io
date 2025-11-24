@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+:root {
+    --secondary-outlination: #cfcfcf;
+    --secondary-outlination-while-highlighted: #9f9f9f;
+    /* --secondary-outlination-while-highlighted: #cfcfcf; */
+    --border-bcon: 1px;
+    --bottom-bcon: 4px;
+    --bottom-bcon-while-highlighted: 1px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+* {
+    font-family: "JetBrains Mono", "Roboto Mono", monospace;
+    text-transform: lowercase;
+    font-weight: normal;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+.hidden {
+    display: none !important;
+}
+.mono-thick {
+    font-weight: bold;
+}
+.t1 {
+    font-size: 2.5rem;
+}
+
+.t2 {
+    font-size: 2rem;
+}
+
+.t3 {
+    font-size: 1.5rem;
+}
+
+.t4 {
+    font-size: 1.25rem;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+.caseless {
+    text-transform: none;
+}
+.content-select {
+    user-select: auto;
+    -webkit-user-select: auto;
+}
+html {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+body {
+    background-color: rgba(0, 0, 0, 0);
+    /* border: 2px solid #2a3439; */
+    margin: 0;
+    gap: 1rem;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+    height: 100dvh;
+}
+#navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.navbutton {
+    background: none;
+    border: none;
+}
+.nav-button-highlight {
+    border-color: var(--secondary-outlination-while-highlighted) !important;
+    border-bottom-width: var(--bottom-bcon-while-highlighted) !important;
+    margin-top: calc(var(--bottom-bcon) - var(--bottom-bcon-while-highlighted));
+}
+/* .navbutton:active {
+} */
+
+.bcon {
+    border-radius: 8px;
+}
+.bcon.minimal {
+    padding: 0.5rem 1rem;
+}
+.bcon.huge {
+    padding: 1rem;
+}
+.bcon.light {
+    background-color: #fcfcfc;
+    border: var(--border-bcon) solid var(--secondary-outlination);
+    border-bottom-width: var(--bottom-bcon-while-highlighted);
+}
+.bcon.dark {
+    background-color: #fcfcfc;
+    border: var(--border-bcon) solid var(--secondary-outlination);
+    border-bottom-width: var(--bottom-bcon-while-highlighted);
+}
+.bcon.btn.light:not(:active) {
+    border-bottom: var(--bottom-bcon) solid var(--secondary-outlination);
+}
+.bcon.btn.dark:not(:active) {
+    border-bottom: var(--bottom-bcon) solid var(--secondary-outlination);
+}
+.bcon.btn:hover {
+    cursor: pointer;
+}
+.bcon.btn.light:hover {
+    filter: brightness(95%);
+}
+.bcon.btn.dark:hover {
+    filter: brightness(95%);
+}
+.bcon.btn:active {
+    filter: brightness(90%) !important;
+    margin-top: calc(var(--bottom-bcon) - var(--bottom-bcon-while-highlighted));
+}
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+#mainContent {
+    height: 100%;
+}
+p {
+    margin: 0;
+}
+footer {
+    position: fixed;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem;
+    width: 100%;
+}
+
+
+
+
+
+
+/* */
+
+#popupOverlay {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+#popupBox {
+  width: 350px;
+  /* height: 100%; */
+  min-width: 0px;
+  max-width: calc(100vw - 2rem);
+  /* max-height: calc(100vh - 2rem); */
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--secondary-outlination);
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--secondary-outlination-while-highlighted);
+}
+
+.input-label {
+  margin-bottom: 0.25rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: auto;
+}
