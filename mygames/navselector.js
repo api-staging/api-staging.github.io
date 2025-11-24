@@ -15,4 +15,4 @@ function main() {
         };
     });
 }
-document.addEventListener('load', main);
+document.addEventListener('DOMContentLoaded', main);
