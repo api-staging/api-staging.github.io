@@ -90,6 +90,7 @@ body {
 }
 .bcon:not(.btn) {
     overflow: auto;
+    overflow-y: scroll;
 }
 .bcon.minimal {
     padding: 0.5rem 1rem;

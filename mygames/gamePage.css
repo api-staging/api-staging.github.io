@@ -37,9 +37,11 @@
 #NextImg, #PrvImg {
     position: absolute;
     font-size: 40px;
+    height: 100%;
     display: flex;
     text-align: center;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
     text-decoration: none;
     color: white;
@@ -48,12 +50,12 @@
 
 #NextImg {
     right: 0px;
-    transform: translateX(50%);
+    transform: translateX(100%);
 }
 
 #PrvImg {
     left: 0px;
-    transform: translateX(-50%);
+    transform: translateX(-100%);
 }
 
 #NextImg:hover, #PrvImg:hover {
