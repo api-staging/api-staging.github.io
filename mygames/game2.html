@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO - MY GAMES</title>
     <link rel="stylesheet" href="/shared.css">
-    <link rel="stylesheet" href="HTMLGames.css">
+    <link rel="stylesheet" href="gamePage.css">
     <script type="module" src="/elements.js"></script>
-    <script src="payload1.cpp"></script>
-    <script src="/libraries/p5.min.js"></script>
-    <script src="/libraries/p5.sound.min.js"></script>
-    <!-- <script src="PONG.js"></script> -->
+    <title>Document</title>
 </head>
 <body>
-    <my-header highlightedindex="2">
+    <my-header highlightedindex="3">
 My Portfolio
 About Me /index.html
 My Projects /my-projects.html
@@ -21,14 +17,20 @@ My HTML Games /mygames/index.html
 Game Showcases /mygames/game1.html
     </my-header>
     <div id="mainContent" class="bcon light huge">
-        <div id="gamePanel">
+        <div id="bodyContainer">
+            <p>This is a brief description of the game you're showcasing</p>
+            <div id="slideshow">
+                <div class="slide">
+                    <img src="/images/gamedemos/Image2.png" alt="">
+                    <p>Caption #2</p>
+                </div>
+                <a href="game1.html" id="PrvImg">&#10094;</a>
+                <a href="game3.html" id="NextImg">&#10095;</a>
+            </div>
         </div>
     </div>
     <footer>
         <a href="#" class="caseless">Like what you see?</a>
     </footer>
-    <script src="navselector.js">
-    </script>
-    <script src="/VisitorRegister.js"></script>
 </body>
 </html>
