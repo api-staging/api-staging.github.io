@@ -88,6 +88,9 @@ body {
 .bcon {
     border-radius: 8px;
 }
+.bcon:not(.btn) {
+    overflow: auto;
+}
 .bcon.minimal {
     padding: 0.5rem 1rem;
 }
