@@ -1,7 +1,18 @@
 :root {
     --padding: 1rem;
 }
-
+.gap-text {
+    gap: 1rem;
+}
+.gap-tiny {
+    gap: 0.5rem;
+}
+.flow-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* gap: 1rem; */
+}
 #bodyContainer {
     border: 1px black solid;
     padding: var(--padding);
@@ -11,7 +22,7 @@
 }
 #slideshow {
     border: 1px black solid;
-    width: 100%;
+    width: fit-content;
     position: relative;
     display: flex;
     align-items: center;
@@ -26,6 +37,7 @@
     flex-direction: column;
     height: 100%;
     box-sizing: border-box;
+    overflow: hidde;
 }
 
 .slide img {
@@ -35,31 +47,29 @@
     max-height: 50dvh;
     object-fit: contain;
 }
+
 #NextImg, #PrvImg {
-    position: absolute;
-    font-size: 40px;
-    height: 100%;
-    display: flex;
+    font-size: 16px;
+    /* width: 32px; */
+    /* height: 32px; */
+    /* border-radius: 4px; */
+    /* display: flex; */
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     cursor: pointer;
     text-decoration: none;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.7);
+    color: black;
+    box-sizing: border-box;
+    padding: 4px;
 }
-
+/* 
 #NextImg {
-    right: 0px;
-    transform: translateX(100%);
+    left: 0px;
+    transform: translateX(0%);
 }
 
 #PrvImg {
     left: 0px;
     transform: translateX(-100%);
-}
-
-#NextImg:hover, #PrvImg:hover {
-    filter: brightness(90%);
-    background-color: rgba(0, 0, 0, 1);
-}
+} */

@@ -77,6 +77,10 @@ body {
     background: none;
     border: none;
 }
+.sizefixedicon {
+    width: 24px;
+    height: 24px;
+}
 .nav-button-highlight {
     border-color: var(--secondary-outlination-while-highlighted) !important;
     border-bottom-width: var(--bottom-bcon-while-highlighted) !important;
