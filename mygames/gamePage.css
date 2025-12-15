@@ -44,6 +44,7 @@
     width: 100%;
     background: black;
     flex: 1;
+    min-height: 50dvh;
     max-height: 50dvh;
     object-fit: contain;
 }
