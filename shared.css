@@ -17,6 +17,9 @@
     font-style: normal;
     font-optical-sizing: auto;
 }
+.text_wrap {
+    text-wrap: wrap;
+}
 .hidden {
     display: none !important;
 }
@@ -50,7 +53,7 @@
     -webkit-user-select: auto;
 }
 html {
-    background-color: #ffffff;
+    background-color: #fcf655;
     display: flex;
     justify-content: center;
 }
@@ -67,7 +70,10 @@ body {
     align-items: left;
     position: relative;
     height: 100dvh;
+    overflow: hidden;
+    box-sizing: border-box;
 }
+
 #navigation {
     display: flex;
     flex-direction: row;
@@ -138,21 +144,14 @@ header {
     align-items: left;
 }
 #mainContent {
-    height: 100%;
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    margin-bottom: 0.5rem;
 }
 p {
     margin: 0;
 }
-footer {
-    position: fixed;
-    bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 1rem;
-    width: 100%;
-}
-
 
 
 
@@ -206,4 +205,79 @@ footer {
   flex-direction: column;
   gap: 1rem;
   margin-top: auto;
+}
+footer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    max-width: 100%;
+    bottom: calc(-152px + 4rem);
+    left: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    row-gap: 16px;
+    margin: 0px;
+    box-sizing: border-box;
+    transition: bottom ease-out 0.25s
+}
+
+footer p.btn {
+    padding: 4rem 1rem !important;
+}
+
+footer:hover {
+    bottom: 0px;
+}
+
+#footerForm {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-bottom: 10px;
+    max-width: 100%;
+    width: 100%;
+    flex-shrink: 1;
+    min-width: 0px;
+    box-sizing: border-box;
+}
+
+.footerRow {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    column-gap: 10px;
+    box-sizing: border-box;
+    flex-shrink: 1;
+    align-items: stretch;
+}
+
+.footerRow input {
+    text-wrap: wrap;
+}
+
+#row1 input {
+    flex: 1;
+    min-width: 0;
+    max-width: 100%;
+    min-height: fit-content;
+}
+
+#row2 input {
+    flex: 2;
+    min-width: 0;
+    max-width: 100%;
+    min-height: fit-content;
+}
+
+#row2 #footerFormSubmit {
+    flex: 0.5;
+    min-width: 0;
+    max-width: 100%;
+    min-height: fit-content;
 }
